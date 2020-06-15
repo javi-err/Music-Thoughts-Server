@@ -1,10 +1,30 @@
-Music Thoughts 
+Music Thoughts
 
-This an App that allows you to share your thoughts on music genres with other users. You anonymously put a thought in and
-others can respond as comments and like the post.
 
-Live link: https://musicthoughts-client.javi-err.now.sh/
+Link to Project: https://music-thoughts-client.vercel.app/
 
-Server link: https://dashboard.heroku.com/apps/secret-lowlands-06468
+API Documentation: https://dashboard.heroku.com/apps/secret-lowlands-06468
 
-Technologies Used: React, Javascript, Node, Express, PostgreSQL
+Summary: This app is a blog type website where you can input your opinion on a genre of music anonymously
+and have someone respond to it or like your post. It is meant to be interactive and promote discussion.
+
+Screenshots: 
+![Image of Landing Page](https://puu.sh/FWy17/7eed5ca273.png)
+![Image of Website](https://puu.sh/FWy0U/9e538740ea.png)
+
+Tech Stack: 
+
+Client:
+ReactJS
+HTML
+JavaScript
+CSS
+Vercel
+
+Server:
+NodeJs
+Express
+Knex
+PostgreSQL
+Heroku
+Screenshots
