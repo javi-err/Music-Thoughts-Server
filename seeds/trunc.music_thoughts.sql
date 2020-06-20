@@ -1,1 +1,2 @@
-TRUNCATE music_thoughts;
+TRUNCATE music_thoughts
+RESTART IDENTITY CASCADE;

@@ -17,10 +17,17 @@ describe('Thoughts Endpoints', function() {
 
   after('disconnect from db', ()  => db.destroy())
 
-  before('clean the table', () => db('music_thoughts').truncate())
+  before('clean the table', () => db.raw("TRUNCATE music_thoughts RESTART IDENTITY CASCADE;"))
 
-  afterEach('cleanup', () => db('music_thoughts').truncate())
+  afterEach('cleanup', () => db.raw("TRUNCATE music_thoughts RESTART IDENTITY CASCADE;"))
 
+describe('Dashboard', () => {
+    it('GET / responds with 200 containing "Intro"', () => {
+      return supertest(app)
+        .get('/')
+        .expect(200, 'Intro')
+    })
+  })
   
 describe(`GET /api/thoughts`, () => {
   context(`Given no thoughts`, () => {

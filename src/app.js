@@ -21,7 +21,7 @@ app.use('/api/comments', commentsRouter)
 
 
 app.get('/', (req, res) => {
-  res.send('Hello, boilerplate!')
+  res.send('Intro')
 })
 
 app.get('/xss', (req, res) => {
